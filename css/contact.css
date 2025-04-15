@@ -53,4 +53,59 @@ button:hover {
     background-color: #0056b3;
     border-radius: 20px;
     ;
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.container {
+    max-width: 800px; /* Increase the width */
+    height: 500px; /* Increase the height */
+    margin: 50px auto;
+    padding: 20px;
+    background: cornflowerblue;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+input, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    width: 100px;
+    margin-left: 600px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    border-radius: 20px;
+    ;
 }
