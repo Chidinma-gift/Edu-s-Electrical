@@ -52,60 +52,33 @@ button {
 button:hover {
     background-color: #0056b3;
     border-radius: 20px;
-    ;
-}body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: gray;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Reduce container width for tablets */
+        padding: 15px;
+    }
+
+    button {
+        margin-left: 0; /* Center-align button */
+    }
 }
 
-.container {
-    max-width: 800px; /* Increase the width */
-    height: 500px; /* Increase the height */
-    margin: 50px auto;
-    padding: 20px;
-    background: cornflowerblue;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Reduce heading size for smaller screens */
+    }
 
-h1 {
-    text-align: center;
-    color: black;
-}
+    label {
+        font-size: 0.9rem; /* Adjust label font size */
+    }
 
-form {
-    display: flex;
-    flex-direction: column;
+    input, textarea, button {
+        font-size: 0.9rem; /* Adjust input and button font size */
+    }
 
-}
-
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: black;
-}
-
-input, textarea, button {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 50px;
-    width: 100px;
-    margin-left: 600px;
-}
-
-button:hover {
-    background-color: #0056b3;
-    border-radius: 20px;
-    ;
+    button {
+        padding: 8px; /* Reduce button padding */
+    }
 }
