@@ -1,0 +1,76 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0%;
+}
+.signup-container{
+    background-color: beige;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0,0, 0.1);
+    width: 300px;
+}
+.signup-container a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+}
+.signup-container a:hover {
+    color: blue;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    width: 320px;
+    padding: 10px;
+    background: skyblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+button:hover{
+    background-color: royalblue;
+transition: 0.5s;
+}
+.switch-link{
+    margin-top: 20px;
+    text-align: center;
+}
+.switch-link a {
+    color: #008cba;
+    text-decoration: none;
+}
+.switch-link a:hover{
+    text-decoration: underline;
+}
+
+#error-message{
+    color: brown;
+    font: size 14px;
+    text-align: center;
+}

@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: blue;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.menu a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+.menu a.active{
+    color: black;
+    cursor: default;
+}
+
+.menu a:hover {
+    color: darkblue;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: blue;
+    transition: all 0.3s ease;
+}
+.menu a.active:hover {
+    color: black;
+    border: none; /* Remove border */
+    background-color: transparent; /* Remove background color */
+    padding: 0; /* Reset padding */
+    cursor: default;
+}
+
+p {
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.about ul a i {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about h2 {
+    text-align: center;
+    color: blue;
+}
+
+.about p {
+    text-align: justify;
+    font-weight: bold;
+}
+h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+footer  {
+    background: blue;
+    color: white;
+    padding: 10px 10px;
+
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        padding: 1rem;
+    }
+
+    .about h2 {
+        font-size: 1.25rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .about {
+        padding: 0.5rem;
+    }
+
+    .about h2 {
+        font-size: 1rem;
+    }
+
+    .about p {
+        font-size: 0.8rem;
+    }
+}

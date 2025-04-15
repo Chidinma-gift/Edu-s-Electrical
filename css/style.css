@@ -1,0 +1,377 @@
+
+body /* Style for the body to display content in flex */ {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: blue;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+.header-left h2 {
+    font-size: 2rem;
+    color: white;
+    
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.menu a {
+    display: inline-flex;
+    margin: 0 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    /* padding: 20px; */
+}
+.menu a :active{
+    text-decoration: none;
+}
+.menu a:hover {
+    /* text-decoration: black; */
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: blue;
+    transition: all 0.3s ease;
+}
+.menu a.active:hover {
+    color: grey; /* Keep the active color */
+    border: none; /* Remove border */
+    background-color: transparent; /* Remove background color */
+    padding: 0; /* Reset padding */
+    transition: none; /* Disable hover transition */
+}
+.menu i {
+    margin-left: 5px; /* Adjust spacing between text and icon */
+    font-size: 2rem;
+}
+main {
+    background-color: cornflowerblue;
+    border-radius: 70%;
+    position: relative;
+    width: 100%;
+}
+
+.main-content {
+    padding: 50px 20px;
+    margin: 20px;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main-content button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.main-content button a{
+    color: black;
+    text-decoration: none;
+}
+.main-content button:hover {
+    background-color: slategray;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding:  5px 10px;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+services {
+    border-radius: 50%;
+    padding: 10px 20px;
+    margin: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.services-section {
+    padding: 50px 20px;
+    margin: 20px;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.services-section button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services-section button:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.services-section button a {
+    color: black;
+    text-decoration: none;
+}
+.services-section P {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.services-section img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba((red), green, blue, alpha) ;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color:white;
+}
+.services-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .header-left {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin: 10px 0;
+        font-size: 1.5rem;
+    }
+
+    .main-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-content p {
+        font-size: 1rem;
+    }
+
+    .main-content button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .services-section ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .services-section img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px){
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .main-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .main-content p {
+        font-size: 0.9rem;
+    }
+
+    .main-content button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .services-section img {
+        width:100%;
+    }
+
+}
+/* General styles for the footer */
+footer {
+    background-color: blue;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    color: white; /* Ensure the text color contrasts with the background */
+    font-size: 1.2rem; /* Ensure the font size is not too small */
+    display: block; /* Ensure the element is not hidden */
+}
+.footer-content a {
+    color: yellow; /* Change this to your desired color */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+.footer-content a:hover {
+    color: limegreen; /* Optional: Change color on hover */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+
+.social-media a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .main-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-content p {
+        font-size: 1rem;
+    }
+
+    .main-content button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .services-section ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .services-section img {
+        width: 80%;
+        height: auto;
+    }
+
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+
+    .social-media {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .social-media a img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .main-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .main-content p {
+        font-size: 0.9rem;
+    }
+
+    .main-content button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .services-section img {
+        width: 100%;
+    }
+
+    .footer-content p {
+        font-size: 0.8rem;
+    }
+
+    .social-media a img {
+        width: 20px;
+        height: 20px;
+    }
+}

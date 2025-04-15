@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="login-container" >
+        <h1>LOGIN</h1>
+        <form id="login-form" onsubmit="return validateLogin(event)">
+            <label for="number">PHONE NUMBER</label>
+            <input type="number" id="number" name="number"required>
+            <label for="email">EMAIL</label>
+            <input type="text" id="EMAIL" name="EMAIL"required>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="PASSWORD" name="PASSWORD"required>
+            <button type="submit"><a href="index.html">LOGIN</a></button>
+            <p class="switch-link">Don't have an account? <a href="./signup.html">Sign up</a></p>
+        </form>
+        <script src="./js/login.js"></script>
+        
+        <p id="error-message"></p>
+    </div>
+</body>
+</html>
